@@ -6,43 +6,43 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('fgdh', '0001_initial'),
+        ("fgdh", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='gxfghtgf',
-            name='asrgfwfsc',
+            model_name="gxfghtgf",
+            name="asrgfwfsc",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='gxfghtgf',
-            name='erfr',
+            model_name="gxfghtgf",
+            name="erfr",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='gxfghtgf',
-            name='ewfergftr',
+            model_name="gxfghtgf",
+            name="ewfergftr",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='gxfghtgf',
-            name='gujuykju',
+            model_name="gxfghtgf",
+            name="gujuykju",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='gxfghtgf',
-            name='qsqsw',
+            model_name="gxfghtgf",
+            name="qsqsw",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='gxfghtgf',
-            name='sdferg',
+            model_name="gxfghtgf",
+            name="sdferg",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='gxfghtgf',
-            name='werfe',
+            model_name="gxfghtgf",
+            name="werfe",
             field=models.BigIntegerField(blank=True, null=True),
         ),
     ]

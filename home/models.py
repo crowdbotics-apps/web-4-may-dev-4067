@@ -17,6 +17,17 @@ class CustomText(models.Model):
     hghg = models.ManyToManyField(
         "home.CustomText", blank=True, related_name="customtext_hghg",
     )
+    fgsf = models.BigIntegerField(null=True, blank=True,)
+    fgs = models.BigIntegerField(null=True, blank=True,)
+    fgbhfh = models.BigIntegerField(null=True, blank=True,)
+    trfhtrth = models.BigIntegerField(null=True, blank=True,)
+    fgvsfhgs = models.BigIntegerField(null=True, blank=True,)
+    rs = models.BigIntegerField(null=True, blank=True,)
+    frgrt = models.BigIntegerField(null=True, blank=True,)
+    fgsrths = models.BigIntegerField(null=True, blank=True,)
+    sdawefq = models.BigIntegerField(null=True, blank=True,)
+    sefewr = models.BigIntegerField(null=True, blank=True,)
+    erfgrtg = models.BigIntegerField(null=True, blank=True,)
 
     def __str__(self):
         return self.title
