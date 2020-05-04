@@ -6,58 +6,58 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('fgnbfhvc', '0001_initial'),
+        ("fgnbfhvc", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='tgjf',
-            name='dewdwee',
+            model_name="tgjf",
+            name="dewdwee",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='efrfrfrf',
+            model_name="tgjf",
+            name="efrfrfrf",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='erett',
+            model_name="tgjf",
+            name="erett",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='erfrgth',
+            model_name="tgjf",
+            name="erfrgth",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='ikiol',
+            model_name="tgjf",
+            name="ikiol",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='qwsqwswqq',
+            model_name="tgjf",
+            name="qwsqwswqq",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='safasdf',
+            model_name="tgjf",
+            name="safasdf",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='sdasf',
+            model_name="tgjf",
+            name="sdasf",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='tyjyuj',
+            model_name="tgjf",
+            name="tyjyuj",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='tgjf',
-            name='wdwdwe',
+            model_name="tgjf",
+            name="wdwdwe",
             field=models.BigIntegerField(blank=True, null=True),
         ),
     ]
