@@ -43,6 +43,7 @@ urlpatterns = [
     path("api/v1/", include("fgnbfhvc.api.v1.urls")),
     path("fgnbfhvc/", include("fgnbfhvc.urls")),
     path("nbhjgbjh/", include("nbhjgbjh.urls")),
+    path("api/v1/", include("homefgh.api.v1.urls")),
 ]
 
 admin.site.site_header = "web 4 may"
