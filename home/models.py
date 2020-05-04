@@ -53,3 +53,8 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Usersfg(models.Model):
+    "Generated Model"
+    yufgh = models.BigIntegerField()

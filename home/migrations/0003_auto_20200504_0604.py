@@ -9,36 +9,50 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0002_load_initial_data'),
+        ("home", "0002_load_initial_data"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='customtext',
-            name='title',
-        ),
-        migrations.RemoveField(
-            model_name='homepage',
-            name='body',
+        migrations.RemoveField(model_name="customtext", name="title",),
+        migrations.RemoveField(model_name="homepage", name="body",),
+        migrations.AddField(
+            model_name="customtext",
+            name="gfg",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_gfg",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='gfg',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_gfg', to='home.CustomText'),
+            model_name="customtext",
+            name="hghg",
+            field=models.ManyToManyField(
+                blank=True, related_name="customtext_hghg", to="home.CustomText"
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='hghg',
-            field=models.ManyToManyField(blank=True, related_name='customtext_hghg', to='home.CustomText'),
+            model_name="homepage",
+            name="hghgh",
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="homepage_hghgh",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
         migrations.AddField(
-            model_name='homepage',
-            name='hghgh',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='homepage_hghgh', to=settings.AUTH_USER_MODEL),
-        ),
-        migrations.AddField(
-            model_name='homepage',
-            name='jhj',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='homepage_jhj', to='home.CustomText'),
+            model_name="homepage",
+            name="jhj",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="homepage_jhj",
+                to="home.CustomText",
+            ),
         ),
     ]
